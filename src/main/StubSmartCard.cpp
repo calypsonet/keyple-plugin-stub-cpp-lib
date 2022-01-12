@@ -125,9 +125,9 @@ std::ostream& operator<<(std::ostream& os, const std::shared_ptr<StubSmartCard> 
     return  os;
 }
 
-std::shared_ptr<StubSmartCard::PowerOnDataStep> StubSmartCard::builder()
+std::unique_ptr<StubSmartCard::PowerOnDataStep> StubSmartCard::builder()
 {
-    return std::shared_ptr<Builder>(new Builder());
+    return std::unique_ptr<Builder>(new Builder());
 }
 
 StubSmartCard::StubSmartCard(const std::vector<uint8_t>& powerOnData,

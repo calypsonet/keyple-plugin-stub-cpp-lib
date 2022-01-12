@@ -210,7 +210,7 @@ public:
      * @return Next step of the builder
      * @since 2.0.0
      */
-    static std::shared_ptr<PowerOnDataStep> builder();
+    static std::unique_ptr<PowerOnDataStep> builder();
 
 private:
     /**
