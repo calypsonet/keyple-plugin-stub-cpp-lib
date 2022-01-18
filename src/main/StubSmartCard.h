@@ -67,6 +67,11 @@ public:
     class PowerOnDataStep {
     public:
         /**
+         * 
+         */
+        virtual ~PowerOnDataStep() = default;
+
+        /**
          * Define simulated power-on data for the {@link StubSmartCard} to build
          *
          * @param powerOnData (not nullable) byte of array
@@ -77,7 +82,7 @@ public:
     };
 
     /**
-     * Builder class for {@link StubSmartCard}.
+     * Builder class for StubSmartCard.
      *
      * @since 2.0.0
      */
