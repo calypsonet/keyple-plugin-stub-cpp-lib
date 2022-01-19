@@ -181,6 +181,7 @@ void StubReaderAdapter::waitForCardRemovalDuringProcessing()
         try {
             Thread::sleep(100);
         } catch (const InterruptedException& e) {
+            (void)e;
             //Thread.currentThread().interrupt();
         }
     }

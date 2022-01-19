@@ -28,6 +28,7 @@
 #include "WaitForCardRemovalNonBlockingSpi.h"
 
 /* Keyple Plugin Stub */
+#include "KeyplePluginStubExport.h"
 #include "StubReader.h"
 #include "StubSmartCard.h"
 
@@ -48,7 +49,7 @@ using namespace keyple::core::util::cpp;
  *
  * @since 2.0.0
  */
-class StubReaderAdapter final
+class KEYPLEPLUGINSTUB_API StubReaderAdapter final
 : public StubReader,
   public ConfigurableReaderSpi,
   public ObservableReaderSpi,

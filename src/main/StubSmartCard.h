@@ -18,6 +18,9 @@
 #include <string>
 #include <vector>
 
+/* Keyple Plugin Stub */
+#include "KeyplePluginStubExport.h"
+
 namespace keyple {
 namespace plugin {
 namespace stub {
@@ -28,7 +31,7 @@ namespace stub {
  *
  * @since 2.0.0
  */
-class StubSmartCard {
+class KEYPLEPLUGINSTUB_API StubSmartCard {
 public:
     class CommandStep {
     public:

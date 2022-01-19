@@ -15,6 +15,7 @@
 #include <string>
 
 /* Keyple Plugin Stub */
+#include "KeyplePluginStubExport.h"
 #include "StubPluginFactoryAdapter.h"
 
 namespace keyple {
@@ -28,7 +29,7 @@ using StubReaderConfiguration = StubPluginFactoryAdapter::StubReaderConfiguratio
  *
  * @since 2.0.0
  */
-class StubPluginFactoryBuilder final {
+class KEYPLEPLUGINSTUB_API StubPluginFactoryBuilder final {
 public:
     /**
      * The plugin default name
@@ -42,7 +43,7 @@ public:
      *
      * @since 2.0.0
      */
-    class Builder {
+    class KEYPLEPLUGINSTUB_API Builder {
     public:
         /**
          *
